@@ -1,0 +1,15 @@
+- docker run -d --name sonarqube -p 9000:9000 sonarqube:7.5-community
+
+- http://localhost:9000
+
+- Generate TOKEN (TOKEN_VALUE)
+
+- docker build --network=host --tag sonar-scanner-image:latest --build-arg SONAR_HOST="http://localhost:9000" --build-arg SONAR_LOGIN_TOKEN="1bd8de524fea8a7c264bb58b7a3cbaa66dfbda5e" .
+
+Example#1
+
+- git clone https://github.com/SetappPL/react-starter-kit.git
+
+- echo "node_modules" > .dockerignore ; echo ".dockerignore" >> .dockerignore
+
+- docker build --network=host --no-cache .
