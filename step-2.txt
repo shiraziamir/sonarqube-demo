@@ -3,5 +3,3 @@ Example#2
 - cd java-example
 - docker build --network=host --no-cache --build-arg .
 
-
-#- docker build --network=host --no-cache --build-arg SONAR_LOGIN_TOKEN="1bd8de524fea8a7c264bb58b7a3cbaa66dfbda5e" .
